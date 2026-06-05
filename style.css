@@ -1,0 +1,33 @@
+body{
+    height: 100vh;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 3fr;
+}
+
+.header{
+    background-color: yellow;
+    grid-column: 2/4;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.sidebar{
+    background-color: #679fe6;
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+.projects{
+    background-color: antiquewhite;
+    grid-column: 2/3;
+}
+
+.menu{
+    background-color: blueviolet;
+    grid-column: 3/4;
+}
