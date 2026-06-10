@@ -1,33 +1,144 @@
 body{
     height: 100vh;
+    font-family: Roboto, sans-serif;
+    margin: 0;
 }
 
 .container{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 1fr 3fr;
+    height: 100vh;
 }
 
 .header{
-    background-color: yellow;
+    background-color: #FFFFFF;
     grid-column: 2/4;
     display: grid;
     grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    padding: 16px;
+}
+
+.icons > img{
+    vertical-align: middle;
+    height: 40px;
+    width: 40px;
+    margin-right: 8px;
+    filter: invert(0.5);
+}
+
+.profile > img{
+    vertical-align: middle;
+    height: 100px;
+    width: 100px;
+    margin-right: 8px;
+    filter: invert(0.5);
+}
+
+.search{
+    grid-row: 1/2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+
+.searchbar-img{
+    vertical-align: middle;
+    height: 20px;
+    width: 20px;
+    margin-right: 8px;
+    filter: invert(0.25);
+}
+
+.information{
+    grid-row: 2/3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
 }
 
 .sidebar{
     background-color: #679fe6;
     grid-column: 1/2;
     grid-row: 1/3;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.dashboard{
+    padding: 40px;
+    padding-bottom: 16px;
+}
+
+.dashboard-img{
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    filter: invert(1);
 }
 
 .projects{
-    background-color: antiquewhite;
+    background-color: whitesmoke;
     grid-column: 2/3;
 }
 
+.content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.projects .content .card{
+    height: 200px;
+    background-color: #FFFFFF;
+    color: black;
+    text-align: left;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.your-projects,
+.announcements-title,
+.trending-title{
+    padding: 16px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
 .menu{
-    background-color: blueviolet;
+    background-color: whitesmoke;
     grid-column: 3/4;
+}
+
+.announcements > .card,
+.trending > .card{
+    background-color: #FFFFFF;
+    width: 20em;
+    border-radius: 10px;
+    padding: 8px;
+    margin: 10px;
+}
+
+.title{
+    font-weight: bold;
+}
+
+li{
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+button{
+    background-color: #679fe6;
+    color: #FFFFFF;
+    border-radius: 20px;
+    border: 1px solid #679fe6;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: #FFFFFF;
 }
